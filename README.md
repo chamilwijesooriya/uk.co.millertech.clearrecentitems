@@ -4,7 +4,7 @@
 
 Adds Clear Recent Items button next to Recent Items heading. When clicked, clears recent items list and adds the current user as the rent item.
 
-The extension is licensed under [AGPL-3.0](LICENSE.txt).
+The extension is licensed under [AGPL-3.0](LICENSE).
 
 ## Requirements
 
