@@ -11,11 +11,19 @@ class CRM_Clearrecentitems_Page_ClearRecentItems extends CRM_Core_Page
         if (CRM_Utils_Request::retrieve('snippet', 'String') != 'json') CRM_Utils_System::redirect();;
 
         $contactID = CRM_Core_Session::getLoggedInContactID();
+
+        // this was necessary to delete items for wordpress, no need for drupal
+        $recentItems = CRM_Utils_Recent::get();
+        foreach ($recentItems as $recentItem){
+            CRM_Utils_Recent::del($recentItem);
+        }
+
         // delete all recent list
         // clear store values
         CRM_Core_Session::singleton()->set(CRM_Utils_Recent::STORE_NAME, NULL);
         $this->assign('recentlyViewed', NULL);
 
+        // add current contact to recent list
         if (!empty($contactID)) {
             $defaults = array();
             $params = array('id' => $contactID);

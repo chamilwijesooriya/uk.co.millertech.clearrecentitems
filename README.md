@@ -4,7 +4,7 @@
 
 Adds Clear Recent Items button next to Recent Items heading. When clicked, clears recent items list and adds the current user as the rent item.
 
-The extension is licensed under [AGPL-3.0](LICENSE).
+The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
@@ -22,7 +22,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl uk.co.millertech.clearrecentitems@https://github.com/chamilwijesooriya/uk.co.millertech.clearrecentitems/archive/master.zip
+cv dl uk.co.millertech.clearrecentitems@https://github.com/FIXME/uk.co.millertech.clearrecentitems/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -31,7 +31,7 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/chamilwijesooriya/uk.co.millertech.clearrecentitems.git
+git clone https://github.com/FIXME/uk.co.millertech.clearrecentitems.git
 cv en clearrecentitems
 ```
 
