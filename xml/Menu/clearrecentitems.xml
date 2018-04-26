@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+    <item>
+        <path>civicrm/clear-recent-items</path>
+        <page_callback>CRM_Clearrecentitems_Page_ClearRecentItems</page_callback>
+        <title>ClearRecentItems</title>
+        <access_arguments>access CiviCRM</access_arguments>
+    </item>
+</menu>

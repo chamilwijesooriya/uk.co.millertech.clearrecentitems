@@ -1,0 +1,1 @@
+{include file="CRM/Block/RecentlyViewed.tpl"}
