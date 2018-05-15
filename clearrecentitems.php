@@ -150,7 +150,6 @@ function clearrecentitems_civicrm_entityTypes(&$entityTypes)
 
 function clearrecentitems_civicrm_coreResourceList(&$list, $region)
 {
-    CRM_Core_Region::instance('page-body')->add(array(
-        'template' => 'CRM/Clearrecentitems/RecentlyViewedExtra.tpl',
-    ));
+    Civi::resources()->addStyleFile('uk.co.millertech.clearrecentitems', 'css/mtl_clearrecentitems.css', 999, $region);
+    Civi::resources()->addScriptFile('uk.co.millertech.clearrecentitems', 'js/mtl_clearrecentitems.js', 999, $region);
 }
