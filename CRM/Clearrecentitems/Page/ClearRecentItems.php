@@ -8,7 +8,7 @@ class CRM_Clearrecentitems_Page_ClearRecentItems extends CRM_Core_Page
     public function run()
     {
         // if not ajax request, do nothing
-        if (CRM_Utils_Request::retrieve('snippet', 'String') != 'json') CRM_Utils_System::redirect();;
+        if (CRM_Utils_Request::retrieve('snippet', 'String') != 'json') CRM_Utils_System::redirect();
 
         $contactID = CRM_Core_Session::getLoggedInContactID();
 
